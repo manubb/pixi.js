@@ -828,8 +828,8 @@ export default class Graphics extends Container
                         gI.attribStart * 4 * 2,
                         gI.attribSize * 2);
 
-                    const indices = new Uint16Array(geometry.indicesUint16.buffer,
-                        gI.start * 2,
+                    const indices = new Uint32Array(geometry.indicesUint16.buffer,
+                        gI.start * 4,
                         gI.size);
 
                     const batch = {

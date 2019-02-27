@@ -526,7 +526,7 @@ export default class GraphicsGeometry extends BatchGeometry
 
         batchPart.size = index - batchPart.start;
         batchPart.attribSize = attrib - batchPart.attribStart;
-        this.indicesUint16 = new Uint16Array(this.indices);
+        this.indicesUint16 = new Uint32Array(this.indices);
 
         // TODO make this a const..
         this.batchable = this.isBatchable();

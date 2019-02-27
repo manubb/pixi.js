@@ -593,7 +593,7 @@ export default class GeometrySystem extends System
             }
             else
             {
-                gl.drawElements(type, size || geometry.indexBuffer.data.length, gl.UNSIGNED_SHORT, (start || 0) * 2);
+                gl.drawElements(type, size || geometry.indexBuffer.data.length, gl.UNSIGNED_INT, (start || 0) * 2);
             }
         }
         else if (geometry.instanced)
